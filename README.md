@@ -33,4 +33,4 @@ Settings.json:
 
 
 ## Observations
-First observation for conftest.py: If there are severatl subfolders of test - e.g. unit - then the conftest.py is serach first in the current folder (e.g. .test/unit/) and then in the higher level test folder.
+First observation for conftest.py: If there are several subfolders of test - e.g. unit - then the conftest.py is serach first in the current folder (e.g. .test/unit/) and then in the higher level test folder.
