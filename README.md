@@ -23,14 +23,18 @@ Settings.json:
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python.testing.pytestArgs": [],
+    "python.testing.pytestArgs": ['tests'],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.testing.cwd": "${workspaceFolder}/tests",
     "python.testing.autoTestDiscoverOnSaveEnabled": true,
 }
 
-
+For a more explicit overview in vsc the line   
+```
+    "python.testing.pytestArgs": ['tests'],  
+```
+has to contain the correct test directory. It can be named 'test' or 'tests' but the name has to be listed here correctly.
 
 ## Observations
 First observation for conftest.py: If there are several subfolders of test - e.g. unit - then the conftest.py is serach first in the current folder (e.g. .test/unit/) and then in the higher level test folder.
@@ -41,6 +45,9 @@ Welcome to Pytest with Eric!
 Learn to write simple but effective tests with Pytest.
 
 From basics to advanced topics with simple, but detailed explanations and example code. Explore the topics below or on the sidebar to get started.
+
+**Current progress 7 out of 87**
+
 Getting Started
 
 - [x] How To Run Pytest (python -m pytest vs pytest)
@@ -55,7 +62,7 @@ Basic Concepts
 
 Testing Best Practices
 
-- [ ] 5 Best Practices For Organizing Tests (Simple And Scalable)
+- [x] 5 Best Practices For Organizing Tests (Simple And Scalable)
 - [ ] Python Testing 101 (How To Decide What To Test)
 - [ ] 13 Proven Ways To Improve Test Runtime With Pytest
 - [ ] Python Unit Testing Best Practices For Building Reliable Applications

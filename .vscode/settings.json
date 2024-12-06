@@ -1,7 +1,10 @@
 {
-    "python.testing.pytestArgs": [
-        "test"
-    ],
+    "files.autoSave": "onFocusChange",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.testing.pytestArgs": ["tests"],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
 }
